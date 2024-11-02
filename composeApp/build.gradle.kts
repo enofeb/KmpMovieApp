@@ -7,6 +7,7 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
+    alias(libs.plugins.buildConfig)
 }
 
 kotlin {
@@ -16,7 +17,7 @@ kotlin {
             jvmTarget.set(JvmTarget.JVM_11)
         }
     }
-    
+
     listOf(
         iosX64(),
         iosArm64(),
@@ -27,9 +28,9 @@ kotlin {
             isStatic = true
         }
     }
-    
+
     sourceSets {
-        
+
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
@@ -43,6 +44,10 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.androidx.lifecycle.runtime.compose)
+            implementation(libs.ktor.client.core)
+            implementation(libs.ktor.serialization.kotlinx.json)
+            implementation(libs.ktor.client.content.negotiation)
+            implementation(libs.ktor.client.logging)
         }
     }
 }
@@ -50,6 +55,7 @@ kotlin {
 android {
     namespace = "com.enofeb.movieapp"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
+    buildFeatures.buildConfig = true
 
     defaultConfig {
         applicationId = "com.enofeb.movieapp"
@@ -78,3 +84,6 @@ dependencies {
     debugImplementation(compose.uiTooling)
 }
 
+buildConfig{
+    buildConfigField("API_KEY", "868a746b0a752877cb8882052cfed408")
+}
