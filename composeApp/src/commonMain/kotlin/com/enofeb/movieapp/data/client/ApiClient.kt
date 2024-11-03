@@ -1,4 +1,4 @@
-package com.enofeb.movieapp.data
+package com.enofeb.movieapp.data.client
 
 import MovieAppKmm.composeApp.BuildConfig
 import com.enofeb.movieapp.utils.ApiConstants
