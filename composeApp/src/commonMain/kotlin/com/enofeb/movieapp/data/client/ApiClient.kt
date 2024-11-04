@@ -1,7 +1,7 @@
 package com.enofeb.movieapp.data.client
 
 import MovieAppKmm.composeApp.BuildConfig
-import com.enofeb.movieapp.utils.ApiConstants
+import com.enofeb.movieapp.data.utils.ApiConstants
 import io.ktor.client.HttpClient
 import io.ktor.client.plugins.HttpTimeout
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
