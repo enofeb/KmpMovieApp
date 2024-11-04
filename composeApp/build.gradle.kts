@@ -48,6 +48,7 @@ kotlin {
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodel)
+            implementation(libs.androidx.lifecycle.viewmodel.compose)
             implementation(libs.androidx.lifecycle.runtime.compose)
             implementation(libs.ktor.client.core)
             implementation(libs.ktor.serialization.kotlinx.json)
@@ -93,6 +94,6 @@ dependencies {
     debugImplementation(compose.uiTooling)
 }
 
-buildConfig{
+buildConfig {
     buildConfigField("API_KEY", "868a746b0a752877cb8882052cfed408")
 }

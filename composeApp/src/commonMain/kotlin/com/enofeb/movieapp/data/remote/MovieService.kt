@@ -4,5 +4,5 @@ import com.enofeb.movieapp.data.model.MovieResponse
 
 interface MovieService {
 
-    suspend fun getPopularMovies(page: Int): MovieResponse
+    suspend fun fetchPopularMovies(page: Int): MovieResponse
 }

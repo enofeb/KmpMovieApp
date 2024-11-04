@@ -9,10 +9,10 @@ import kotlinx.coroutines.flow.flow
 
 class MovieRepository(private val movieService: MovieService) {
 
-    fun getPopularMovies(page: Int): Flow<Result<MovieResponse>> {
+    fun fetchPopularMovies(page: Int): Flow<Result<MovieResponse>> {
         return flow {
             emit(
-                movieService.getPopularMovies(page)
+                movieService.fetchPopularMovies(page)
             )
         }.remote()
     }

@@ -8,7 +8,7 @@ import io.ktor.http.encodedPath
 
 class MovieServiceImpl : MovieService {
 
-    override suspend fun getPopularMovies(page: Int): MovieResponse {
+    override suspend fun fetchPopularMovies(page: Int): MovieResponse {
         return client.get {
             url {
                 encodedPath = "3/movie/popular"
