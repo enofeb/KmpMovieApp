@@ -6,6 +6,7 @@ struct iOSApp: App {
 
     init() {
       KoinInitHelperKt.doInitKoin()
+      LoggerInitHelperKt.doInitLogger()
     }
 
     var body: some Scene {

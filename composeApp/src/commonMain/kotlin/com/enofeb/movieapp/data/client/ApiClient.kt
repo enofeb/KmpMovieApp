@@ -2,6 +2,8 @@ package com.enofeb.movieapp.data.client
 
 import MovieAppKmm.composeApp.BuildConfig
 import com.enofeb.movieapp.data.utils.ApiConstants
+import io.github.aakira.napier.DebugAntilog
+import io.github.aakira.napier.Napier
 import io.ktor.client.HttpClient
 import io.ktor.client.plugins.HttpTimeout
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
@@ -33,7 +35,7 @@ val client = HttpClient {
         level = LogLevel.HEADERS
         logger = object : Logger {
             override fun log(message: String) {
-                print(message)
+                Napier.i(tag = "HTTP START LOG", message = message)
             }
         }
     }

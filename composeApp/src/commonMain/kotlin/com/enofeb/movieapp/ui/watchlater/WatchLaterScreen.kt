@@ -1,4 +1,4 @@
-package com.enofeb.movieapp.ui
+package com.enofeb.movieapp.ui.watchlater
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

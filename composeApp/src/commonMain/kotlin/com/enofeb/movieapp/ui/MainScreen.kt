@@ -3,14 +3,16 @@ package com.enofeb.movieapp.ui
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Scaffold
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.enofeb.movieapp.ui.component.MovieBottomAppBar
+import com.enofeb.movieapp.ui.home.HomeScreen
 import com.enofeb.movieapp.ui.navigation.Destinations
+import com.enofeb.movieapp.ui.search.SearchScreen
+import com.enofeb.movieapp.ui.watchlater.WatchLaterScreen
 
 @Composable
 fun MainScreen() {
