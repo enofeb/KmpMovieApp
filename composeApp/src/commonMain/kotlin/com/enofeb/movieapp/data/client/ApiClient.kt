@@ -32,7 +32,7 @@ val client = HttpClient {
     }
     install(Logging) {
         logger = Logger.DEFAULT
-        level = LogLevel.HEADERS
+        level = LogLevel.BODY
         logger = object : Logger {
             override fun log(message: String) {
                 Napier.i(tag = "HTTP START LOG", message = message)
