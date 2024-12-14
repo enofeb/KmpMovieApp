@@ -60,7 +60,7 @@ kotlin {
             implementation(libs.koin.compose.viewmodel.navigation)
             implementation(libs.compose.navigation)
             implementation(libs.napier.logging)
-            implementation(libs.coil.compose)
+            implementation(libs.landscapist.coil)
         }
     }
 }

@@ -19,8 +19,7 @@ buildConfig = "5.5.0"
 koin-version = "4.0.0"
 compose-navigation = "2.8.0-alpha10"
 napier = "2.7.1"
-coil = "3.0.4"
-kamel = "1.0.2"
+landscapist-Coil = "2.4.4"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -49,8 +48,7 @@ koin-compose-viewmodel-navigation = { module = "io.insert-koin:koin-compose-view
 koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin-version" }
 compose-navigation = { module = "org.jetbrains.androidx.navigation:navigation-compose", version.ref = "compose-navigation" }
 napier-logging = { module = "io.github.aakira:napier", version.ref = "napier" }
-coil-Compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coil" }
-kamel-Image = { module = "media.kamel:kamel-image", version.ref = "kamel" }
+landscapist-coil = { module = "com.github.skydoves:landscapist-coil3", version.ref = "landscapist-Coil" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
