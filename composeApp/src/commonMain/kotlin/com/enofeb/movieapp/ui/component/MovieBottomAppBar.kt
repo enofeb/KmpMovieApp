@@ -1,9 +1,8 @@
 package com.enofeb.movieapp.ui.component
 
-import androidx.compose.material.BottomAppBar
+import androidx.compose.material3.BottomAppBar
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavController
-import androidx.navigation.NavHostController
 import movieappkmm.composeapp.generated.resources.Res
 import androidx.navigation.compose.currentBackStackEntryAsState
 import com.enofeb.movieapp.ui.navigation.Destinations
